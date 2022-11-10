@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+.back-icon {
+    width: 23px;
+}
+.navbar-brand {
+    font-size: medium;
+    color: #f6f6e9;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 1325px;
+    background-color: white;
+}
+
+.report-hr {
+    max-width: 1325px;
+}
+
+.col6 {
+    max-width: 615px;
+    margin-left: 10px;
+}
+
+.wrapper {
+    color: black;
+    height: auto;
+    margin-top: 75px;
+    box-shadow: 5px 8px 5px #c0c0b9;
+    border: 2px  solid #e7e7db;
+    background-color: #ffffff;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: 550;
+    margin-bottom: 5px;
+}
+
+h5 {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+#contact {
+    font-size: 13px;
+}
+
+.btn-primary {
+    background-color: #054d7e;
+}
+
+.btn-secondary {
+    background-color: #fd5f00;
+}
+
+.btn {
+    width: auto;
+}
+
+h6 {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.vr {
+    height: auto;
+    padding: 0;
+}
+
+.desc {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 1;
+}
+
+p {
+    text-align: justify;
+}
+
+.incident-info {
+    text-align: justify;
+}
