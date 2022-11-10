@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
+
+.complaintID, .view {
+    font-weight: 50;
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+.complainant-id-data, .complainant-name-data, .toda-data, .body-no-data, .status-data {
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 100;
+    text-align: center;
+}
+
+.view-btn {
+    color: black;
+    font-family:'Bebas Neue', cursive;
+    font-size: 2px;
+    width: 65px;
+    font-size: medium;
+}
+
+

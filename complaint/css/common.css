@@ -1,0 +1,26 @@
+.navbar-brand {
+    font-size: large, 1rem;
+    font-weight: 600;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.account-menu {
+    font-family: 'Bebas Neue', cursive;
+}
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 50;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sidebar-menu{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/complaint/bg3.jpg');
+    height: 100vmax;
+}
+
+td {
+    text-align: center;
+}
