@@ -13,8 +13,6 @@
     />
     <link rel="stylesheet" href="css/missing-solved.css">
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="/complaint/css/common.css">
 
   </head>
   <body>
@@ -40,24 +38,19 @@
                             <div class="navbar-nav account-box">
                                 <div class="row">
 
-                                    <div class="d-flex justify-content-between">
                                         <!-- account block start-->
-                                        <div class="account-menu pb-3">
-                                            <a href="/complaint/complaint.html" class="navbar-brand d-flex flex-row-reverse text-white pt-3 mx-2">  
-                                                BIYAHEROES
+                                        <div class="">
+                                            <h3 class="logo mx-2 my-1">BIYAHEROES</h3>
+                                        </div>
+                                        <!-- <div class="d-flex flex-row-reverse pb-2">
+                                            <a href="" class=" my-3">
+                                                <img class=".img-responsive notification-icon mx-1" src="img/bell2.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             </a>
-                                        </div>
+                                            <div class="my-3 account-block">
 
-                                        <div class="d-flex flex-row-reverse pb-2">
-                                            <div class="mx-2 my-3 account-block">
-                                                <a href="">
-                                                    <img class=".img-responsive notification-icon" src="img/bell2.png">
-                                                </a>
+                                                <h4 class="logo mx-1">BIYAHEROES</h4>
                                             </div>
-                                        </div>
-
-                                        
-                                    </div>
+                                        </div> -->
 
                                     <!-- main menu block start -->
                                     <div class="main-menu pb-3">
@@ -87,11 +80,11 @@
                                         <hr>
                                             <ul class="navbar-nav d-flex flex-column mx-3 pb-5">
                                                 <li>
-                                                    <a href="/add member/add member.html" class="nav-link active text-white">ADD MEMBER</a>
+                                                    <a href="/add member/add-member.html" class="nav-link active text-white">ADD MEMBER</a>
                                                 </li>
                             
                                                 <li>
-                                                    <a href="/edit profile/edit-profile.html" class="nav-link text-white">EDIT PROFILE</a>
+                                                    <a href="/edit profile/profile.html" class="nav-link text-white">EDIT PROFILE</a>
                                                 </li>
                             
                                                 <li>
@@ -108,16 +101,15 @@
                 </div>
 
                 <div class="col pending-list">
-                    <div class="d-flex justify-content-between">
-                        <h5 class="text-center my-2">SOLVED MISSING REPORT LIST</h5>
+                    <div class="d-lg-flex">
+                        <h5 class="text-lg-start text-center my-2">SOLVED MISSING REPORT LIST</h5>
 
-                    <div class="d-flex justify-content-end search-bar">
-                        <form class="form-inline my-2 my-lg-2 search-form" style="width: 200px;">
-                            <input type="text" placeholder="Search" id="myInput" onkeyup='tableSearch()' class="form-control">
-                        </form>
-                        <img class="search-icon my-3" src="img/search-icon.png">
-                    </div>
-
+                        <div class="d-flex justify-content-lg-end justify-content-md-center search-bar">
+                            <form class="form-inline my-2 my-lg-2 search-form" style="width: 200px;">
+                                <input type="text" placeholder="Search" id="myInput" onkeyup='tableSearch()' class="form-control">
+                            </form>
+                            <img class="search-icon my-3" src="/img/search-icon.png">
+                        </div>
                     </div>
 
                     <!-- sample report start -->
@@ -126,32 +118,29 @@
                         <table class="table table-hover overdue-report" id="myTable-th" data-filter-control="true" data-show-search-clear-button="true">
                             <thead>
                                 <tr>
-                                    <th scope="col" class="complaintID">REPORT #</th>
-                                    <th scope="col" id="full-name">COMPLAINANT</th>
-                                    <th scope="col" id="toda">TODA</th>
-                                    <th scope="col" id="body-no">BODY NO</th>
-                                    <th scope="col" id="status">STATUS</th>
-                                    <th scope="col" class="view">VIEW</th>
+                                    <th data-column="reportNo" data-order="desc">REPORT # </th>
+                                    <th data-column="complainant" data-order="desc">REPORTER</th>
+                                    <th data-column="todaName" data-order="desc">TODA </th>
+                                    <th data-column="bodyNo" data-order="desc">BODY NO</th>
+                                    <th data-column="status" data-order="desc">STATUS</th>
+                                    <th data-column="view" data-order="desc">VIEW</th>
                                 </tr>
-                            </thead>
-                            <tbody id="myTable">
+                            </thead>    
+                             
+                                <tbody id="myTable">
                                 <tr>
-                                    <th scope="row" class="complainant-id-data">#1</th>
-                                    <td class="complainant-name-data">ALIYAH MAE LALUYAN</td>
-                                    <td class="toda-data">HALANG</td>
-                                    <td class="body-no-data">B202</td>
-                                    <td class="status-data">SOLVED</td>
+                                    <td id="report-no"></td>
+                                    <td class="complainant-name-data" id="complainant"></td>
+                                    <td class="toda-data" id="toda-name"></td>
+                                    <td class="body-no-data" id="body-no"></td>
+                                    <td class="status-data" id="status"></td>
                                     <td class="view">
                                         <a href="missing-solved-report.html">
                                             <button class="btn btn-outline-dark btn-sm view-btn">View</button>
                                         </a>
                                     </td>
                                 </tr>
-                                
-                                <tr>
-                                    
-                                </tr>
-                            </tbody>
+                                </tbody>
                         </table>
                         <!-- sample report end -->
                 </div>
@@ -169,8 +158,8 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"
     ></script>
-    <script src="/complaint/search.js"></script>
+    <script src="/javascript/search.js"></script>
+    <script src="js/solved-list.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="/complaint/sort2.js"></script>
   </body>
 </html>

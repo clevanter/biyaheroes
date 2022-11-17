@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
 
+
 body{
     font-family: 'Bebas Neue', cursive;
     font-size: 20px;
@@ -86,7 +87,9 @@ li:hover {
 }
 
 .search-icon, .sort-icon{
+    height: 25px;
     width: 30px;
+    margin-left: 50px;
 }
 
 h5 {
@@ -138,14 +141,9 @@ small {
 
 .add {
     width: 50px;
-    margin-top: 12px;
+    justify-content: center;
 }
 
-.upload {
-    width: 45px;
-    margin-top: 12px;
-    margin-left: 5px;
-}
 
 .download {
     width: 33px;
@@ -153,17 +151,49 @@ small {
     margin-left: 5px;
 }
 
-#toda, #president-name, .edit, .delete {
-    font-weight: 50;
-    font-size: 14px;
-    font-family:Arial, Helvetica, sans-serif;
+
+.file-input > input {
+    display: none;
 }
-.toda-data, .president-data {
+
+  .search-form {
+    margin-left: 275px;
+}
+
+.search-bar {
+    margin-left: 250px;
+}
+
+.form-control {
+    margin-left: 80px;
+}
+
+.search-icon {
+    height: 25px;
+    width: 30px;
+    margin-left: 50px;
+}
+
+button {
+    height: 30px;
+    text-align: center;
+}
+
+.btn-options {
+    height: 40px;
+    width: 80px;
+}
+
+.btn-options:hover {
+    color: #fd5f00;
+}
+
+#name {
+    border: none;
+}
+
+th {
     font-size: 20px;
     font-family: 'Bebas Neue', cursive;
     font-weight: 100;
 }
-
-.image-upload>input {
-    display: none;
-  }

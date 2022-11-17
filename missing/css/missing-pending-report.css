@@ -30,17 +30,7 @@ body {
 }
 
 .wrapper {
-    color: black;
-    height: auto;
     margin-top: 75px;
-    box-shadow: 5px 8px 5px #c0c0b9;
-    border: 2px  solid #e7e7db;
-    border-radius: 10px;
-    /* background-color: #DBD7D2; */
-    /* background-color: #E5E4E2; */
-    background-color: #F5F5F5;
-    /* background-color: #F2F3F5; */
-    /* background-color: #E3E4E0;*/
 } 
 
 h3 {

@@ -4,11 +4,7 @@ body {
 .back-icon {
     width: 23px;
 }
-.navbar-brand {
-    font-size: medium;
-    color: #f6f6e9;
-    font-weight: 600;
-}
+
 
 .container {
     max-width: 1325px;
@@ -24,12 +20,8 @@ body {
 }
 
 .wrapper {
-    color: black;
-    height: auto;
     margin-top: 75px;
-    box-shadow: 5px 8px 5px #c0c0b9;
-    border: 2px  solid #e7e7db;
-    background-color: #f6f6e9;
+
 }
 
 h3 {
@@ -62,7 +54,6 @@ h5 {
 h6 {
     font-size: 13px;
     font-weight: 600;
-    opacity: .5;
 }
 
 .vr {
@@ -91,6 +82,15 @@ h7 {
 }
 
 #closed-date {
-    font-size: 14x;
-    padding-left: 80px;
+    font-size: 15px;
+    padding-top: 5px;
+}
+#driver-name, #toda-name, #body-no {
+    color: black;
+}
+
+.badge {
+    border-radius: 10px;
+    border-color: #34312f;
+    height: 60px;
 }

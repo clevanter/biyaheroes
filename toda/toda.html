@@ -11,10 +11,9 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <!-- <link rel="stylesheet" href="css/typography.css"> -->
     <link rel="stylesheet" href="css/toda.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="/complaint/css/common.css">
+    <link rel="stylesheet" href="/css/common.css">
 
   </head>
   <body>
@@ -36,28 +35,23 @@
                         </button>
 
                     <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                        <div class="sidebar-menu" >
+                        <div class="sidebar-menu">
                             <div class="navbar-nav account-box">
                                 <div class="row">
 
-                                    <div class="d-flex justify-content-between">
                                         <!-- account block start-->
-                                        <div class="account-menu pb-3">
-                                            <a href="/complaint/complaint.html" class="navbar-brand d-flex flex-row-reverse text-white pt-3 mx-2">  
-                                                BIYAHEROES
+                                        <div class="">
+                                            <h3 class="logo mx-2 my-1">BIYAHEROES</h3>
+                                        </div>
+                                        <!-- <div class="d-flex flex-row-reverse pb-2">
+                                            <a href="" class=" my-3">
+                                                <img class=".img-responsive notification-icon mx-1" src="img/bell2.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                             </a>
-                                        </div>
+                                            <div class="my-3 account-block">
 
-                                        <div class="d-flex flex-row-reverse pb-2">
-                                            <div class="mx-2 my-3 account-block">
-                                                <a href="">
-                                                    <img class=".img-responsive notification-icon" src="img/bell2.png">
-                                                </a>
+                                                <h4 class="logo mx-1">BIYAHEROES</h4>
                                             </div>
-                                        </div>
-
-                                        
-                                    </div>
+                                        </div> -->
 
                                     <!-- main menu block start -->
                                     <div class="main-menu pb-3">
@@ -87,11 +81,11 @@
                                         <hr>
                                             <ul class="navbar-nav d-flex flex-column mx-3 pb-5">
                                                 <li>
-                                                    <a href="/add member/add member.html" class="nav-link active text-white">ADD MEMBER</a>
+                                                    <a href="/add member/add-member.html" class="nav-link active text-white">ADD MEMBER</a>
                                                 </li>
                             
                                                 <li>
-                                                    <a href="/edit profile/edit-profile.html" class="nav-link text-white">EDIT PROFILE</a>
+                                                    <a href="/edit profile/profile.html" class="nav-link text-white">EDIT PROFILE</a>
                                                 </li>
                             
                                                 <li>
@@ -108,13 +102,14 @@
                 </div>
 
                 <div class="col pending-list">
-                    <div class="d-flex justify-content-between">
-                        <h5 class="text-center my-2">PRESIDENTS OF TODA</h5>
-                        <div class="d-flex justify-content-end search-bar">
+                    <div class="d-lg-flex">
+                        <h5 class="text-lg-start text-center my-2">TODA PRESIDENTS</h5>
+
+                        <div class="d-flex justify-content-lg-end justify-content-md-center search-bar">
                             <form class="form-inline my-2 my-lg-2 search-form" style="width: 200px;">
                                 <input type="text" placeholder="Search" id="myInput" onkeyup='tableSearch()' class="form-control">
                             </form>
-                            <img class="search-icon my-3" src="img/search-icon.png">
+                            <img class="search-icon my-3" src="/img/search-icon.png">
                         </div>
                     </div>
 
@@ -124,51 +119,89 @@
                             <thead class="left-details">
                                 <tr>
                                     <th scope="col" id="toda">TODA NAME</th>
-                                    <th scope="col" class="president-name" id="president-name" contenteditable="false">PRESIDENT'S NAME</th>
+                                    <th scope="col" class="president-name" contenteditable="false">PRESIDENT'S NAME</th>
                                     <!-- <th scope="col" class="edit">EDIT</th> -->
                                     <!-- <th scope="col" class="add" id="add" contenteditable="false">ADD</th> -->
-                                    <th scope="col" class="delete" id="delete" contenteditable="false">REMOVE</th>
+                                    <th scope="col" class="delete" id="delete">REMOVE</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <!-- <td><input type="text" name="name[]" id="name" class="form-control"></td> -->
-                                    <td scope="row" class="todaName" edit-form>SAN FRANCISCO</td>
+                                    <td scope="row" class="input-data" id="toda-name"></td>
                                     <!-- <td><input type="text" name="president-name[]" id="president-name" class="form-control"></td> -->
-                                    <td class="president-data" edit-form>MANG KANOR</td>
+                                    <td class="input-data" id="president-name"></td>
                                     <!-- <td><input type="text" name="name[]" id="name" class="form-control"></td> -->
                                     <!-- <td class="edit-icon">
                                         <a href="" id="edit-icon" onclick="toEdit()">
                                             <img id="icon" class="edit-icon" src="img/edit-icon.png">
                                         </a>
                                     </td> -->
-                                    <td class="delete-icon" id="delete-icn" contenteditable="false">
+                                    <td class="delete-icon">
                                         <a href="">
-                                            <img class="delete-icon" src="img/delete-icon.png">
+                                            <img class="delete-icon" id="delete-icn"  onclick="toRemove()" src="/img/delete-icon.png">
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row" class="input-data" id="new-toda-name"></td>
+                                    <td class="input-data" id="new-president-name"></td>
+                                    <td class="delete-icon">
+                                        <a href="">
+                                            <img class="delete-icon" id="delete-icn"  onclick="toRemove()" src="/img/delete-icon.png">
                                         </a>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         <!-- sample report end -->
-                        
-                        <div class="d-flex flex-row-reverse button-options">
-                            <!-- <a href="">
-                                <img class="add" src="img/add-icon.png">
-                            </a> -->
-                                <img src="img/add-icon.png" class="add"/>
-                            <a href="" class="image-upload">
-                                <label for="file-input">
-                                <img class="upload" src="img/upload-icon.png">
-                                </label>
-                                <input id="file-input" type="file" />
-                            </a>
-                            <a href="" download="sample.txt">
-                                <img class="download" src="img/download-icon.png">
-                            </a>
+
+                        <div class="input-group mb-3 pe-5 mx-2" id="new-input">
+                            <!-- <span class="input-group-text" id="basic-addon1">ENTER</span> -->
+                            <label class="input-group-text" for="inputGroupSelect01">TODA NAME</label>
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Choose...</option>
+                                    <option value="San Francisco" id="1">San Francisco</option>
+                                    <option value="Dela Paz" id="2">Dela Paz</option>
+                                    <option value="Malaban" id="3">Malaban</option>
+                                </select>
+                            <!-- <span class="input-group-text" id="basic-addon1">ENTER</span> -->
+                            <input type="text" class="form-control" placeholder="President Name" aria-label="President Name" aria-describedby="basic-addon1" id="input-pres-name">
+                            <button type="button" class="btn btn-outline-dark mx-1" id="save" style="height: 38px;">save</button>
                         </div>
-                </div>
+
+                        <div class="d-flex flex-row-reverse">                     
+                            <a href="" download="sample.txt">
+                                <button class="btn btn-light  me-md-2 border border-secondary btn-options" type="button" id="download">DOWNLOAD</button>
+                            </a>
+                            <button class="btn btn-light  me-md-2 border border-secondary btn-options upload" type="button" id="upload">
+                                <input id="file-input" type="file" style="display: none;">
+                                <label for="file-input"> UPLOAD
+                                </label>                                    
+                            </button>
+                            <button class="btn btn-light  me-md-2 border border-secondary text-center btn-options" type="button" onclick="showInputForm()" id="new-btn">ADD</button>
+                        </div>
+                    </div>
             </div>
+            <!-- <footer>
+                
+                <div class="d-flex flex-row-reverse button-options">
+                    <a href="">
+                        <img class="add" src="img/add-icon.png">
+                    </a> -->
+<!--                     
+                    <a href="" class="image-upload">
+                        <label for="file-input">
+                        <img class="upload" src="img/upload-icon.png">
+                        </label>
+                        <input id="file-input" type="file" />
+                    </a> -->
+                    <!-- <a href="" download="sample.txt">
+                        <img class="download" src="img/download-icon.png">
+                    </a>
+                    <button type="button" class="btn btn-outline-dark" onclick="showInputForm()" id="new-btn">New</button>
+                </div>
+            </footer> -->
         </div>
     </nav>
 
@@ -182,8 +215,12 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"
     ></script>
-    <script src="index.js"></script>
-    <script src="/complaint/search.js"></script>
+    <script src="js/toda.js"></script>
+    <script src="js/save.js"></script>
+    <script src="/javascript/search.js"></script>
+    <!-- <script src="Remove.js"></script> -->
+    <script src="js/inline edit.js"></script>
+    <script src="js/new.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>

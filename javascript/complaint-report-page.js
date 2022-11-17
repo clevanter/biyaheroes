@@ -1,22 +1,29 @@
-
 const reportNo = document.getElementById('report-no');
 const submissionDate = document.getElementById('submission-date');
 const complainant = document.getElementById('complainant');
 const contact = document.getElementById('contact');
-const driverName = document.getElementsById('full-name');
+const driverName = document.getElementById('full-name');
 const todaName = document.getElementById('toda-name');
 const bodyNo = document.getElementById('body-no');
 const violation = document.getElementById('violation');
 const incidentDate = document.getElementById('incident-date');
 const driverDesc = document.getElementById('driver-detailed-desc');
 const incidentDesc = document.getElementById('incident-detailed-desc');
+const resolvedBtn = document.getElementById('resolved-btn');
+const receivedBtn = document.getElementById('received-btn');
 
+receivedBtn.addEventListener('click', displayReceived());
 
-function displayDetails(reportNo){
-    
+function displayReceived(){
+    alert('The complainant will be notified.');
+    receivedBtn.disabled = true;
 }
 
-console.log(displayDetails('#1'));
+resolvedBtn.addEventListener('click', displayConfirmation());
+
+function displayConfirmation(){
+    confirm('The report will now be move inside \'Solved Reports\' to proceed click OK.');
+}
 // class Report {
 //     constructor(reportNo){
 //         this.reportNo = reportNo;

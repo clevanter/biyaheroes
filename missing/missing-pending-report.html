@@ -13,45 +13,45 @@
     />
     <link rel="stylesheet" href="css/missing-pending-report.css">
     <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="/complaint/css/common.css">
+    <link rel="stylesheet" href="/css/common.css">
 
   </head>
-
   <body>
     <nav class="navbar fixed-top navbar-light header" style="background-color: #0d3f62;">
         <div class="container-fluid">
             <div class="d-flex flex-row">
                 <a href="missing-pending.html">
-                    <img class="back-icon my-2" src="img/back-icon.png">
+                    <img class="back-icon my-2" src="/img/back-icon.png">
                 </a>
-                <a class="navbar-brand" href="/complaint/complaint.html" style="color: white ;">
+                <a class="navbar-brand" href="missing.html" style="color: white ;">
                     BIYAHEROES
                 </a>
             </div>
         </div>
     </nav>
 
-    <div class="container pt-5">
-
-            <div class="row pt-5">
-                <div class="col d-flex d-flex justify-content-between">
-                    <div class="align-content upper-detail mx-4">
-                        <h3 id="report-no">MISSING REPORT ID </h3>
-                        <small id="submission-date">SUBMISSION DATE</small> <br>
-                        <small id="complainant" class="">REPORTER FULL NAME</h5> <br>
-                        <small id="contact">CONTACT NO.</small> <br>
+    <div class="container rounded-3">
+        <div class="wrapper pt-3">
+                <div class="">
+                    <div class="upper-detail mx-4">
+                        <div class="d-flex flex-row justify-content-lg-start justify-content-sm-center">
+                            <h3>Report ID: </h3>
+                            <h3 id="report-no" class="mx-1">REPORTNO.</h3>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <small>Complainant:</small>
+                            <small id="complainant" class="mx-1">COMPLAINANT FULL NAME</small> <br>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <small>Contact No:</small>
+                            <small id="contact" class="mx-1">CONTACT NO.</small> <br>
+                        </div>
+                        <div class="d-flex flex-row">
+                            <small>Submitted:</small>
+                            <small id="submission-date" class="mx-1">SUBMISSION DATE</small> <br>
+                        </div>          
                     </div>
-                    
-        
-                    <!-- <div class="button-options mx-4">
-                            <button type="button" class="btn btn-primary">Received</button>
-                        </a>
-        
-                        <a href="">
-                            <button type="button" class="btn btn-secondary">Resolved</button>
-                        </a>
-                    </div>
-                </div> -->
+                </div>
             </div>
             <hr class="report-hr">
 
@@ -59,43 +59,42 @@
                     <div class="row pt-3">
                         <div class="col-lg-6 col-md-12">
                             <div class="driver-info mx-4">
-                                <h3 class="pb-2">DRIVER'S INFORMATION</h3>
+                                <h3>DRIVER'S INFORMATION</h3>
             
                                 <div class="driver-detail">
-                                    <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row">
                                         <h6 class="name">NAME:</h6>
-                                        <h6 id="driver-name" class="ps-2">SAMPLE TEXT</h6>
+                                        <h6 id="driver-name" class="mx-2 data-value">SAMPLE TEXT</h6>
                                     </div>
-                                    <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row">
                                         <h6 class="toda-name">TODA:</h6>
-                                        <h6 id="toda-name" class="ps-2">SAMPLE TEXT</h6>
+                                        <h6 id="toda-name" class="mx-2 data-value">SAMPLE TEXT</h6>
                                     </div>
-                                    <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row">
                                         <h6 class="body-no">BODY/PLATE #:</h6>
-                                        <h6 id="body-no" class="ps-2">SAMPLE TEXT</h6>
+                                        <h6 id="body-no" class="mx-1 data-value">SAMPLE TEXT</h6>
                                     </div>
                                 </div>
                             </div>
                             <hr class="col6">
                         </div>
                         
-                        <div class="d-flex row vr"></div>
+                        <div class="d-flex row vr d-none d-lg-block"></div>
 
                         <div class="col-lg-6 col-md-12">
                             <div class="incident-info mx-4">
-                                <h3 class="pb-2">INCIDENT INFORMATION</h3>
+                                <h3>INCIDENT INFORMATION</h3>
         
                                 <div class="incident-detail">
-                                    <div class="d-flex justify-content-start">
-                                        <h6 class="item">ITEM:</h6>
-                                        <h6 id="item" class="ps-2">SAMPLE TEXT</h6>
+                                    <div class="d-flex flex-row">
+                                        <h6 class="">MISSING: </h6>
+                                        <h6 id="missing" class="mx-2">SAMPLE TEXT</h6>
                                     </div>
 
-                                    <div class="d-flex justify-content-start">
+                                    <div class="d-flex flex-row">
                                         <h6 class="date">DATE:</h6>
-                                        <h6 id="submission-date" class="ps-2 pb-4">SAMPLE TEXT</h6>
+                                        <h6 id="incident-date" class="mx-2 pb-4">SAMPLE TEXT</h6>
                                     </div>
-
                                 </div>
                             </div>
                             <hr class="col6">
@@ -106,34 +105,33 @@
             <div class="row">
                 <div class="col-lg-6 col-md-12">
                     <div class="driver-desc mx-4">
-                        <h6 class="desc">DRIVER'S DESCRIPTION</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugiat deserunt, repudiandae nemo quia debitis atque id blanditiis, quisquam cupiditate illum! Minus ea fugit omnis molestiae eos autem quae vitae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti id, harum quos architecto cum voluptatem culpa dolorum quae, illum, sapiente ipsum pariatur quisquam facilis optio inventore porro tempore odit.</p>
+                        <h6 class="desc">DRIVER'S DESCRIPTION</h6>
+                        <p id="driver-desc" class="text-wrap"></p>
                     </div>
                 </div>
 
-                <div class="d-flex row vr"></div>
+                <div class="d-flex row vr d-none d-lg-block"></div>
 
                 <div class="col-lg-6 col-md-12">
                     <div class="incident-desc mx-4">
-                        <h6 class="desc">INCIDENT DESCRIPTION</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugiat deserunt, repudiandae nemo quia debitis atque id blanditiis, quisquam cupiditate illum! Minus ea fugit omnis molestiae eos autem quae vitae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti id, harum quos architecto cum voluptatem culpa dolorum quae, illum, sapiente ipsum pariatur quisquam facilis optio inventore porro tempore odit.</p>
+                        <h6 class="desc">INCIDENT DESCRIPTION</h6>
+                        <p id="incident-detailed-desc"></p>
                     </div>
                 </div>
 
                 <div class="d-flex flex-row-reverse button-options pe-4 pb-2">
                     <a href="" class="ps-1">
-                        <button type="button" class="btn btn-outline-success">Resolved</button>
+                        <button type="button" class="btn btn-outline-success" id="resolved-btn" onclick="displayConfirmation()">Resolved</button>
                     </a>
 
-                    <a href="">
-                    <button type="button" class="btn btn-outline-primary">Received</button>
+                    <a href="#">
+                    <button type="button" class="btn btn-outline-primary" id="received-btn" onclick="displayReceived()">Received</button>
                     </a>
                 </div>
             </div>
-            </div>
+        </div>
     </div>
 
-    
     <script
     src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -144,8 +142,10 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"
     ></script>
-    <script src="/complaint/index.js"></script>
+    <script src="js/pending-report.js"></script>
+    <script src="/javascript/search.js"></script>
 
+    <!-- <script src="/javascript/complaint-report-page.js"></script> -->
   </body>
 
 </html>
