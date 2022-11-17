@@ -7,9 +7,7 @@ body{
 .sidebar-menu{
     font-family: 'Montserrat', sans-serif;
     /* background-image: linear-gradient(to top, #0d3f62 , #054d7e); */
-    background-image: url('/complaint/bg3.jpg');
-    background-size: cover;
-    height: 100vmax;
+
 }
 
 .account-menu {
@@ -90,9 +88,9 @@ li:hover {
 }
 
 .search-icon, .sort-icon{
+    height: 25px;
     width: 30px;
     margin-left: 50px;
-    
 }
 
 input {
@@ -137,5 +135,4 @@ th {
     font-weight: 50;
     font-size: 14px;
     text-align: center;
-
 }

@@ -121,11 +121,10 @@ small {
     padding-left: 20px;
 }
 
-.edit, .delete {
+.edit-icon, .delete-icon {
     width: 22px;
-    padding-bottom: 20px;
-    opacity: 0.5;
-    margin-bottom: 0px;
+    opacity: 0.75;
+    text-align: center;
 }
 
 .full-name {
@@ -143,7 +142,6 @@ small {
 
 .upload {
     width: 45px;
-    margin-top: 12px;
     margin-left: 5px;
 }
 
@@ -151,4 +149,36 @@ small {
     width: 33px;
     margin-top:20px;
     margin-left: 5px;
+}
+
+.search-form {
+    margin-left: 280px;
+}
+
+.search-bar {
+    margin-left: 280px;
+}
+
+.form-control {
+    margin-left: 80px;
+}
+
+.search-icon {
+    height: 25px;
+    width: 30px;
+    margin-left: 50px;
+}
+
+button {
+    height: 30px;
+    text-align: center;
+}
+
+.btn-options {
+    height: 40px;
+    width: 80px;
+}
+
+.btn-options:hover {
+    color: #fd5f00;
 }

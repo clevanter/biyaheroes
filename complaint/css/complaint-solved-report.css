@@ -20,12 +20,8 @@ body {
 }
 
 .wrapper {
-    color: black;
-    height: auto;
     margin-top: 75px;
-    box-shadow: 5px 8px 5px #c0c0b9;
-    border: 2px  solid #e7e7db;
-    background-color: #ffffff;
+
 }
 
 h3 {
@@ -86,9 +82,15 @@ h7 {
 }
 
 #closed-date {
-    font-size: 14x;
-    padding-left: 80px;
+    font-size: 15px;
+    padding-top: 5px;
 }
 #driver-name, #toda-name, #body-no {
     color: black;
+}
+
+.badge {
+    border-radius: 10px;
+    border-color: #34312f;
+    height: 60px;
 }

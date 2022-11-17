@@ -13,8 +13,7 @@
     />
     <link rel="stylesheet" href="css/complaint-solved-report.css">
     <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="/complaint/css/common.css">
+    <link rel="stylesheet" href="/css/common.css">
 
   </head>
 
@@ -23,21 +22,21 @@
         <div class="container-fluid">
             <div class="d-flex flex-row">
                 <a href="complaint-solved.html">
-                    <img class="back-icon my-2" src="img/back-icon.png">
+                    <img class="back-icon my-2" src="/img/back-icon.png">
                 </a>
-                <a class="navbar-brand" href="complaint.html" style="color: white ;">
+                <a class="navbar-brand" href="/missing/missing.html" style="color: white ;">
                     BIYAHEROES
                 </a>
             </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="wrapper pt-3 border-top rounded-3">
-            <div class="row">
-                <div class="col d-flex d-flex justify-content-between">
-                    <div class="align-content upper-detail mx-4">
-                        <div class="d-flex flex-row">
+    <div class="container rounded-3">
+        <div class="wrapper pt-3">
+            <div class="">
+                <div class="d-flex justify-content-lg-between">
+                    <div class="upper-detail mx-4">
+                        <div class="d-flex flex-row justify-content-lg-start justify-content-sm-center">
                             <h3>Report ID: </h3>
                             <h3 id="report-no" class="mx-1">REPORTNO.</h3>
                         </div>
@@ -52,14 +51,11 @@
                         <div class="d-flex flex-row">
                             <small>Submitted:</small>
                             <small id="submission-date" class="mx-1">SUBMISSION DATE</small> <br>
-                        </div>
+                        </div>          
                     </div>
                     
         
-                    <div class="d-flex flex-column case-closed mx-4">
-                        <h7 class="mx-5">CASE CLOSED</h7>
-                        <small id="closed-date">DATE</small>
-                    </div>
+
                 </div>
             </div>
             <hr class="report-hr">
@@ -88,7 +84,7 @@
                             <hr class="col6">
                         </div>
                         
-                        <div class="d-flex row vr"></div>
+                        <div class="d-flex row vr d-none d-lg-block"></div>
 
                         <div class="col-lg-6 col-md-12">
                             <div class="incident-info mx-4">
@@ -111,22 +107,27 @@
                     </div>
                 
 
-            <div class="row">
+            <div class="row pb-2">
                 <div class="col-lg-6 col-md-12">
                     <div class="driver-desc mx-4">
-                        <h6 class="desc">DRIVER'S DESCRIPTION</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugiat deserunt, repudiandae nemo quia debitis atque id blanditiis, quisquam cupiditate illum! Minus ea fugit omnis molestiae eos autem quae vitae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti id, harum quos architecto cum voluptatem culpa dolorum quae, illum, sapiente ipsum pariatur quisquam facilis optio inventore porro tempore odit.</p>
+                        <h6>DRIVER'S DESCRIPTION</h4>
+                        <p id="driver-desc"></p>
                     </div>
                 </div>
 
-                <div class="d-flex row vr"></div>
+                <div class="d-flex row vr d-none d-lg-block"></div>
 
                 <div class="col-lg-6 col-md-12">
                     <div class="incident-desc mx-4">
-                        <h6 class="desc">INCIDENT DESCRIPTION</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi fugiat deserunt, repudiandae nemo quia debitis atque id blanditiis, quisquam cupiditate illum! Minus ea fugit omnis molestiae eos autem quae vitae? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus corrupti id, harum quos architecto cum voluptatem culpa dolorum quae, illum, sapiente ipsum pariatur quisquam facilis optio inventore porro tempore odit.</p>
+                        <h6>INCIDENT DESCRIPTION</h4>
+                        <p id="incident-desc"></p>
                     </div>
                 </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center case-closed mx-4 mb-5  badge bg-secondary text-wrap" style="width: auto;">
+                <h7 class="mx-5 justify-content-center">CASE CLOSED</h7>
+                <small class="justify-content-center" id="closed-date">DATE</small>
             </div>
         </div>
     </div>
@@ -142,7 +143,7 @@
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"
     ></script>
-    <script src="forList.js"></script>
+    <script src="js/solved-report.js"></script>
   </body>
 
 </html>

@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,600;1,200&display=swap');
 
+
 body{
     font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
 }
 
 .sidebar-menu{
     font-family: 'Montserrat', sans-serif;
-    background-image: url('/complaint/bg3.jpg');
+    background-image: linear-gradient(to top, #0d3f62 , #054d7e);
     height: 100vmax;
 }
 
@@ -85,7 +87,9 @@ li:hover {
 }
 
 .search-icon, .sort-icon{
+    height: 25px;
     width: 30px;
+    margin-left: 50px;
 }
 
 h5 {
@@ -103,6 +107,19 @@ small {
     font-size: 13px;
 }
 
+#status {
+    text-align: center;
+    opacity: 0.5;
+}
+
+.view {
+    border-radius: 35px;
+    border-color: transparent;
+    height: 35px;
+    width: 100px;
+    background-color: #fd5f00;
+    color: white;
+}
 
 .pending-list {
     padding-left: 20px;
@@ -118,17 +135,15 @@ small {
     margin-bottom: 0;
 }
 
+.right-details {
+    padding-top: 50px;
+}
 
 .add {
     width: 50px;
-    margin-top: 12px;
+    justify-content: center;
 }
 
-.upload {
-    width: 45px;
-    margin-top: 12px;
-    margin-left: 5px;
-}
 
 .download {
     width: 33px;
@@ -136,14 +151,43 @@ small {
     margin-left: 5px;
 }
 
-#toda, #driver-name, #body-no, .edit, .delete {
-    font-weight: 50;
-    font-size: 14px;
-    font-family:Arial, Helvetica, sans-serif;
+
+.file-input > input {
+    display: none;
 }
 
-.toda-data, .driver-data, .body-no-data {
-    font-size: 20px;
-    font-family: 'Bebas Neue', cursive;
-    font-weight: 100;
+  .search-form {
+    margin-left: 275px;
 }
+
+.search-bar {
+    margin-left: 250px;
+}
+
+.form-control {
+    margin-left: 110px;
+}
+
+.search-icon {
+    height: 25px;
+    width: 30px;
+    margin-left: 70px;
+}
+
+button {
+    height: 30px;
+    text-align: center;
+}
+
+.btn-options {
+    height: 40px;
+    width: 80px;
+}
+
+.btn-options:hover {
+    color: #fd5f00;
+}
+
+/* th, td {
+    text-align: start;
+} */
